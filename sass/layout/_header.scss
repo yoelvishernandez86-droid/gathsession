@@ -1,0 +1,26 @@
+@use "../abstracts/mixins" as *;
+@use "../themes/colors" as *;
+header {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  .logo {
+    margin-right: 40%;
+  }
+  ul {
+    @include reset_ul;
+    a:hover {
+      position: relative;
+      color: $white;
+      &::after {
+        content: "";
+        background-color: $pink;
+        width: 60%;
+        height: 3px;
+        display: block;
+        position: absolute;
+        top: 120%;
+      }
+    }
+  }
+}

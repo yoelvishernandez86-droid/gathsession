@@ -1,5 +1,5 @@
 @use "../abstracts/mixins" as *;
-
+@use "../themes/colors" as *;
 //tipografias utilizadas
 @mixin h1 {
   font-weight: 700;

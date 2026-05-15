@@ -7,11 +7,39 @@
 @use "./themes/themes";
 @use "settings";
 @use "./themes/colors" as *;
-
+@use "./base/typography" as *;
+@use "./components/buttons" as *;
 //tipografias
-
+h1 {
+  @include h1;
+}
+h2 {
+  @include h2;
+}
+a {
+  @include a;
+}
+p {
+  @include p;
+}
 //botones
-
+.button {
+  @include button;
+}
 //colores de fondo
-
-//imagen de fondo
+body {
+  background-color: $black;
+}
+//active
+a {
+  position: relative;
+  &.active::after {
+    content: "";
+    background-color: $pink;
+    width: 60%;
+    height: 3px;
+    display: block;
+    position: absolute;
+    top: 120%;
+  }
+}
