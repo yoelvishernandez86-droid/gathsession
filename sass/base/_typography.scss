@@ -1,1 +1,28 @@
 @use "../abstracts/mixins" as *;
+
+//tipografias utilizadas
+@mixin h1 {
+  font-weight: 700;
+  font-size: 80px;
+  letter-spacing: 0%;
+  color: $white;
+}
+@mixin h2 {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0%;
+  color: $white;
+}
+@mixin a {
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0%;
+  color: $grey;
+}
+@mixin p {
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 0%;
+  line-height: 40px;
+  color: $grey;
+}
