@@ -1,0 +1,9 @@
+@use "../abstracts/abstracts" as *;
+
+html * {
+  font-family: $poppins-font;
+}
+
+body {
+  overflow-x: hidden;
+}
