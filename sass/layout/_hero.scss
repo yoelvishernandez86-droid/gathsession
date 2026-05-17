@@ -1,0 +1,11 @@
+@use "../themes/colors" as *;
+.hero {
+  max-width: 45%;
+  p {
+    max-width: 90%;
+    margin: 10px 0px 40px 0px;
+  }
+  .get_started {
+    margin-right: 30px;
+  }
+}

@@ -1,0 +1,9 @@
+.cards {
+  display: flex;
+  margin-top: 100px;
+  gap: 100px;
+  article {
+    display: flex;
+    max-width: min-content;
+  }
+}

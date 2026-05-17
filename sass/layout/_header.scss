@@ -2,6 +2,7 @@
 @use "../themes/colors" as *;
 header {
   margin-top: 30px;
+  margin-bottom: 10%;
   display: flex;
   align-items: center;
   .logo {

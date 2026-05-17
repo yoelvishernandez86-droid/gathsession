@@ -12,6 +12,7 @@
 //tipografias
 h1 {
   @include h1;
+  font-family: "Merriweather", serif;
 }
 h2 {
   @include h2;
@@ -26,9 +27,27 @@ p {
 .button {
   @include button;
 }
+.learn_more {
+  color: $white;
+  display: inline-flex;
+  align-items: center;
+
+  &::after {
+    content: url(../assets/Arrow.svg);
+  }
+}
 //colores de fondo
 body {
   background-color: $black;
+}
+//imagenes de fondo
+body {
+  background-image: url(../assets/ellipse.svg), url(../assets/ellipse.svg);
+  background-repeat: no-repeat;
+  background-size: auto, 800px;
+  background-position:
+    100% 250%,
+    110% 250%;
 }
 //active
 a {
