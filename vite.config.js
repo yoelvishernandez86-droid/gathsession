@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/spa_and_beauty/",
+  base: "/gathsession/",
   css: {
     preprocessorOptions: {
       scss: {
